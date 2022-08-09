@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get free robux</title>
+    <script type="text/javascript" src="script.js"></script>
+    <style lang="css">
+        body{
+            background-color: #bffff9;
+        }
+        .container-1{
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .username, .amount{
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        .btn {
+            background-color: #04AA6D;
+            color: white;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 300px;
+            opacity: 0.9;
+        }
+
+        button:hover {
+        opacity:1;
+        }
+
+        .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+        }
+
+        .cancelbtn {
+        float: left;
+        width: 50%;
+        }
+
+        .signupbtn{
+            width: 300px;
+        }
+        .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: #474e5d;
+        padding-top: 50px;
+        }
+
+        .modal-content {
+        background-color: white;
+        margin: 5% auto 15% auto; 
+        border: 1px solid #888;
+        width: 80%; 
+        }
+        
+        .close {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #f44336;
+        cursor: pointer;
+        }
+
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        @media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn {
+            width: 100%;
+            }
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        
+        .loader {
+            border: 16px solid lightgray;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 150px;
+            height: 150px;
+            -webkit-animation: spin 2s linear infinite; 
+            animation: spin 2s linear infinite;
+            }
+
+        .loading {
+            text-align: center;
+            font-size: 25px;
+            color: #b3bdbc;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <h1>Free Robux</h1>
+        <input type="text" class="username" placeholder="Username">
+        <br>
+        <input type="text" class="amount" placeholder="Amount of Robux">
+        <br>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:300px;" class="btn">Get robux</button>
+
+        <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content">
+            <br>
+                <div class="loading">
+                        <h2>Loading . . . </h2>
+                    <div class="container">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            <br>
+            <br>
+            <br>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
